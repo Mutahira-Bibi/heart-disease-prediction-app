@@ -50,38 +50,44 @@ if page == "🏠 Home":
         "heart disease from patient information."
     )
 
+    
     st.write("---")
 
     st.subheader("📊 Project Overview")
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns([1.5, 1, 1])
 
-    col1.metric("Model", "Logistic Regression")
-    col2.metric("Accuracy", "86.96%")
-    col3.metric("Dataset", "918 Patients")
+    with col1:
+        st.write("Model")
+        st.markdown("### Logistic Regression")
+    with col2:
+        st.metric("Accuracy", "86.96%")
+    with col3:
+        st.metric("Dataset", "918 Patients")
+        
 
     st.write("---")
 
     st.subheader("🚀 How This App Works")
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns([1.1, 1.1, 1])
 
     with col1:
-        st.write("### 1️⃣ Enter Information")
+        st.write("#### 1️⃣ Enter Information")
         st.write(
             "Enter the required patient information "
             "on the Prediction page."
         )
 
     with col2:
-        st.write("### 2️⃣ Machine Learning")
+        st.write("#### 2️⃣ Machine Learning")
         st.write(
             "The trained Logistic Regression model "
             "processes the information."
         )
 
     with col3:
-        st.write("### 3️⃣ Get Prediction")
+        st.write("#### 3️⃣ Get Prediction")
         st.write(
             "The model gives a prediction based on "
             "the entered information."
