@@ -502,7 +502,7 @@ import joblib
 import pandas as pd
 
 # Load model files
-model = joblib.load("Logisticregression_heart.pkl")
+model = joblib.load("model.pkl")
 scaler = joblib.load("scaler.pkl")
 columns = joblib.load("columns.pkl")
 
