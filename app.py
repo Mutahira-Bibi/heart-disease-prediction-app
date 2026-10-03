@@ -14,7 +14,7 @@ st.set_page_config(
     page_icon="❤️",
     layout="wide"
 )
-
+`
 
 # Sidebar
 st.sidebar.title("❤️ Heart Disease")
