@@ -88,8 +88,7 @@ if page == "🏠 Home":
         )
 
     st.write("---")
-
-     st.success("👩‍💻 Developed by Mutahira Bibi | Final Year Project 2026")
+    st.success("👩‍💻 Developed by Mutahira Bibi | Final Year Project 2026")
     st.caption("Heart Disease Prediction System - For Educational Purpose")
 
 
